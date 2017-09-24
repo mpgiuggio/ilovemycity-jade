@@ -1,0 +1,20 @@
+html
+	head
+		include partials/head_includes.jade
+
+	body
+		include partials/navigation.jade
+		h1.headline 
+			=name
+
+		.container
+			.row
+				- for (var k=0; k<images.length; k++)
+					.col-md-6
+						.thumbnail
+							.bgd_image(style="background-image: url(/images/" + id + "/" + images[k] + ");")
+							
+					
+		
+		include partials/jsincludes.jade
+	
